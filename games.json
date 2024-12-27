@@ -1,0 +1,83 @@
+{
+    "tf2": {
+        "name": "Team Fortress 2",
+        "protocol": "valve",
+        "port": 27015
+    },
+    "csgo": {
+        "name": "Counter-Strike: Global Offensive",
+        "protocol": "valve",
+        "port": 27015
+    },
+    "minecraft": {
+        "name": "Minecraft: Java Edition",
+        "protocol": "minecraft",
+        "port": 25565
+    },
+    "minecraftbe": {
+        "name": "Minecraft: Bedrock Edition",
+        "protocol": "minecraftbe",
+        "port": 19132
+    },
+    "7d2d": {
+        "name": "7 Days To Die",
+        "protocol": "valve",
+        "port": 26900
+    },
+    "arkse": {
+        "name": "ARK: Survival Evolved",
+        "protocol": "valve",
+        "port": 27015,
+        "options": {
+            "queryPort": "query_port"
+        }
+    },
+    "ase": {
+        "name": "America's Army: Proving Grounds",
+        "protocol": "ase",
+        "port": 27020,
+        "options": {
+            "queryPort": 27021
+        }
+    },
+    "bf1942": {
+        "name": "Battlefield 1942",
+        "protocol": "gamespy1",
+        "port": 14567,
+        "options": {
+            "queryPort": 23000
+        }
+    },
+    "ut": {
+        "name": "Unreal Tournament",
+        "protocol": "gamespy1",
+        "port": 7777,
+        "options": {
+            "queryPort": 7778
+        }
+    },
+    "mta": {
+        "name": "Multi Theft Auto",
+        "protocol": "mta",
+        "port": 22003,
+        "options": {
+            "queryPort": 123
+        }
+    },
+    "rust": {
+        "name": "Rust",
+        "protocol": "valve",
+        "port": 28015,
+        "options": {
+            "queryPort": "query_port"
+        }
+    },
+    "valheim": {
+        "name": "Valheim",
+        "protocol": "valve",
+        "port": 2456,
+        "options": {
+            "queryPort": "query_port"
+        }
+    }
+}
