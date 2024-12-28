@@ -1,5 +1,7 @@
+
 from dataclasses import dataclass
 import socket
+from typing import Callable
 
 
 @dataclass
@@ -10,7 +12,16 @@ class GameDefinition:
     options: dict[str, str | int]
 
 
-async def process_packets(host: str, port: int, request: bytes, packet_handler: callable, is_finished: callable, timeout: float = 5.0, max_attempts: int = 3, encoding: str = "utf8") -> dict:
+async def process_packets(
+    host: str,
+    port: int,
+    request: bytes,
+    packet_handler: Callable,
+    is_finished: Callable[[None], bool],
+    timeout: float = 5.0,
+    max_attempts: int = 3,
+    encoding: str = "utf8",
+) -> dict:
     """Processes UDP packets for game server queries.
 
     Args:

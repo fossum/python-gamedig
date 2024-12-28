@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gamedig_py"
+version = "0.1.0"
+packages = ["gamedig"]
+
+[project.urls]
+"Homepage" = "https://github.com/fossum/python-gamedig"
+
+
+[tool.setuptools]
+include-package-data = true
+
+# Add dependencies if needed under this section
+[project.optional-dependencies]
+dev = [
+  "pytest", # Example dev dependencies
+  "flake8"
+]
+
+# Example for flake8 configuration
+[tool.flake8]
+max-line-length = 100
